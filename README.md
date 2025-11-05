@@ -164,6 +164,8 @@ npm run make
 A portable Windows executable of the **Employee Data Visualization App** is available.  
 No installer is required — simply download and launch the app directly.
 
-[Download Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases/tag/Employee-Data-Visualization)
+[Download Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases/latest/download/Employee.Data.Visualization.App.0.6.0.exe)
+
+
 
 
