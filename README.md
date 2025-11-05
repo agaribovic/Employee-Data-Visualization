@@ -92,6 +92,24 @@ npm install
 ```
 ---
 
+### Configure API Base URL
+
+After setting up OpenAPI, ensure the following configuration is applied:
+
+1. **Set the API base URL** in `common.ts`:
+
+```ts
+export const DUMMY_BASE_URL = `https://api.dummy.in-lotion.de`;
+```
+
+2. **Verify the API endpoint path in** in `api.ts`:
+
+```ts
+const localVarPath = `/api/time-changes`;
+```
+
+---
+
 ## Environment Modes:
 
 - Development: npm run dev
