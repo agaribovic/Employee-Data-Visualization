@@ -6,7 +6,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 
 ## Demo / Screenshot
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+<div style="display: flex; gap: 20px; flex-wrap: nowrap; justify-content: center;">
   <img src="./assets/screenshots/in-motion.jpg" alt="Employee Data Visualization App" height="400" />
   <img src="./assets/screenshots/in-motion-responsive.jpg" alt="Employee Data Visualization App - Responsive" height="400" />
 </div>
