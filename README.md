@@ -158,3 +158,12 @@ npm run make
 - The .exe is located in /out/make/squirrel.windows/x64/
 - Portable, no installer required
 
+
+### Windows Executable (.exe)
+
+A portable Windows executable of the **Employee Data Visualization App** is available.  
+No installer is required — simply download and launch the app directly.
+
+[Download Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases/tag/Employee-Data-Visualization)
+
+
