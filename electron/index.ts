@@ -20,7 +20,7 @@ function createWindow() {
   if (isDev) {
     const port = process.env.PORT || 3000;
     window.loadURL(`http://localhost:${port}`);
-    window.webContents.openDevTools();
+    //window.webContents.openDevTools();
   } else {
     window.loadFile(join(__dirname, '../dist-vite/index.html'));
   }

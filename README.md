@@ -6,7 +6,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 
 ## Demo / Screenshot
 
-<div style="display: flex; gap: 50px">
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
   <img src="./assets/screenshots/in-motion.jpg" alt="Employee Data Visualization App" height="400" />
   <img src="./assets/screenshots/in-motion-responsive.jpg" alt="Employee Data Visualization App - Responsive" height="400" />
 </div>
@@ -70,20 +70,19 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 │   │   └─ /utils
 │   │       └─ timeChangesUtils.test.ts
 │   └─ /utils
-│       └─ timeChangesUtils.ts
-│
-├─ App.tsx
-├─ index.css
-├─ index.html
-├─ main.tsx
+│   │    └─ timeChangesUtils.ts
+│   │
+│   ├─ App.tsx
+│   ├─ index.css
+│   ├─ index.html
+│   └─ main.tsx
+├─  .eslintrc.json
+├─  .gitignore
+├─  .prettierrc
+├─  .LICENSE.md
+├─  README.md
+└─  forge.config.js
 ```
-
-## Environment Modes:
-
-- Development: npm run dev
-- Production: npm run build && npm run start:prod
-
----
 
 ## Quick Start
 
@@ -94,6 +93,14 @@ git clone https://github.com/agaribovic/Employee-Data-Visualization.git
 cd employee-data-visualization
 npm install
 ```
+---
+
+## Environment Modes:
+
+- Development: npm run dev
+- Production: npm run build && npm run start:prod
+
+---
 
 ### Run in Development
 
