@@ -7,8 +7,8 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 ## Demo / Screenshot
 
 <div style="display: flex; gap: 50px">
-  <img src="./assets/in-motion.jpg" alt="Employee Data Visualization App" height="400" />
-  <img src="./assets/in-motion-responsive.jpg" alt="Employee Data Visualization App - Responsive" height="400" />
+  <img src="./assets/screenshots/in-motion.jpg" alt="Employee Data Visualization App" height="400" />
+  <img src="./assets/screenshots/in-motion-responsive.jpg" alt="Employee Data Visualization App - Responsive" height="400" />
 </div>
 
 ---
@@ -39,12 +39,10 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 
 ```bash
 .
-├─ /dist-electron       
-│   ├─ index.js
-│   └─ preload.ts
-├─ /dist-vite           
-│   ├─ /assets
-│   └─ index.html
+├─ /assets           
+│   ├─ /screenshots
+│   │   ├─ in-motion.jpg 
+│   │   └─ in-motion-responsive.jpg      
 ├─ /electron            
 │   ├─ index.ts
 │   ├─ preload.ts
@@ -62,38 +60,22 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 │   │   └─ Dashboard.tsx
 │   ├─ /hooks
 │   │   └─ useTimeChanges.ts
+│   ├─ /tests               
+│   │   ├─ /components
+│   │   │   ├─ Card.test.tsx
+│   │   │   ├─ Chart.test.tsx
+│   │   │   └─ Dashboard.test.tsx
+│   │   ├─ /hooks
+│   │   │   └─ useTimeChanges.test.ts
+│   │   └─ /utils
+│   │       └─ timeChangesUtils.test.ts
 │   └─ /utils
 │       └─ timeChangesUtils.ts
-├─ /tests               
-│   ├─ /components
-│   │   ├─ Card.test.tsx
-│   │   ├─ Chart.test.tsx
-│   │   └─ Dashboard.test.tsx
-│   ├─ /hooks
-│   │   └─ useTimeChanges.test.ts
-│   └─ /utils
-│       └─ timeChangesUtils.test.ts
+│
 ├─ App.tsx
-├─ main.tsx
 ├─ index.css
 ├─ index.html
-├─ package.json
-├─ tsconfig.json
-├─ vite.config.ts
-├─ forge.config.js
-├─ README.md
-├─ .eslintrc.json
-├─ .prettierrc
-├─ .gitignore
-├─ LICENSE.md
-└─ package-lock.json
-└─ package.json
-└─ postcss.config.js
-└─ README.md
-└─ tailwind.config.js 
-└─ tsconfig.json
-└─ vite.config.ts
-└─ yarn.lock
+├─ main.tsx
 ```
 
 ## Environment Modes:
@@ -108,7 +90,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 ### Clone & Install
 
 ```bash
-git clone git@github.com:agaribovic/Employee-Data-Visualization.git
+git clone https://github.com/agaribovic/Employee-Data-Visualization.git
 cd employee-data-visualization
 npm install
 ```
