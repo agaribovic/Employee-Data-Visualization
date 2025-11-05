@@ -7,8 +7,8 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 ## Demo / Screenshot
 
 <div style="display: flex; gap: 50px">
-  <img src="./dist-vite/assets/in-motion.jpg" alt="Employee Data Visualization App" height="400" />
-  <img src="./dist-vite/assets/in-motion-responsive.jpg" alt="Employee Data Visualization App - Responsive" height="400" />
+  <img src="./assets/in-motion.jpg" alt="Employee Data Visualization App" height="400" />
+  <img src="./assets/in-motion-responsive.jpg" alt="Employee Data Visualization App - Responsive" height="400" />
 </div>
 
 ---
@@ -108,7 +108,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 ### Clone & Install
 
 ```bash
-git clone <your-repo-link>
+git clone git@github.com:agaribovic/Employee-Data-Visualization.git
 cd employee-data-visualization
 npm install
 ```
