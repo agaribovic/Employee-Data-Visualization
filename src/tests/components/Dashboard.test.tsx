@@ -29,7 +29,7 @@ describe('DashboardComponent', () => {
     });
 
     render(<DashboardComponent />);
-    expect(screen.getByText(/loading/i)).toBeInTheDocument();
+    expect(screen.getByRole('status')).toBeInTheDocument();
   });
 
   it('renders error state', () => {

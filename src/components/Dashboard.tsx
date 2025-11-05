@@ -11,12 +11,16 @@ export const DashboardComponent: FC = () => {
   const workplaceTotals = useMemo(() => aggregateWorkplaceAllocation(data), [data]);
   const averages = useMemo(() => averageTime(data), [data]);
 
-  if (loading)
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <div className="w-20 h-20 border-8 border-gray-700 border-t-[#FFB20A] rounded-full animate-spin shadow-lg"></div>
-      </div> 
-    );
+ if (loading)
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <div
+        role="status"
+        aria-label="Loading"
+        className="w-20 h-20 border-8 border-gray-700 border-t-[#FFB20A] rounded-full animate-spin shadow-lg"
+      />
+    </div>
+  );
   if (error) return <p className="text-center text-red-500 mt-10">Error: {error}</p>;
   if (!data.length) return <p className="text-center text-gray-400 mt-10">No data available</p>;
 

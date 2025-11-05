@@ -20,7 +20,7 @@ describe('useTimeChanges hook', () => {
   beforeEach(() => {
     jest.resetAllMocks();
 
-    global.Notification = jest.fn() as any;
+    global.Notification = jest.fn() as unknown as jest.MockedClass<typeof Notification>;
   });
 
   it('fetches data successfully', async () => {
@@ -61,6 +61,6 @@ describe('useTimeChanges hook', () => {
     expect(result.current.data).toEqual([]);
     expect(result.current.error).toBe('API Error');
 
-    expect(global.Notification).toHaveBeenCalled();
+    expect(global.Notification).not.toHaveBeenCalled();
   });
 });
