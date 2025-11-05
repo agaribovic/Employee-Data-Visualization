@@ -15,7 +15,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
   <img 
     src="./assets/screenshots/in-motion-responsive.jpg" 
     alt="Employee Data Visualization App - Responsive" 
-    style="height: auto; max-height: 400px; width: auto; max-width: 45vw;"
+    style="height: auto; max-height: 200px; width: auto; max-width: 45vw;"
   />
 </div>
 
