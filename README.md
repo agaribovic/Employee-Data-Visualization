@@ -6,18 +6,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 
 ## Demo / Screenshot
 
-<div style="display: flex; gap: 20px; flex-wrap: nowrap; justify-content: center; align-items: center;">
-  <img 
-    src="./assets/screenshots/in-motion.jpg" 
-    alt="Employee Data Visualization App" 
-    style="height: auto; max-height: 400px; width: auto; max-width: 45vw;"
-  />
-  <img 
-    src="./assets/screenshots/in-motion-responsive.jpg" 
-    alt="Employee Data Visualization App - Responsive" 
-    style="height: auto; max-height: 200px; width: auto; max-width: 45vw;"
-  />
-</div>
+![Employee Data Visualization App](./assets/screenshots/in-motion.jpg)
 
 ---
 
@@ -84,12 +73,12 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 │   ├─ index.css
 │   ├─ index.html
 │   └─ main.tsx
-├─  .eslintrc.json
-├─  .gitignore
-├─  .prettierrc
-├─  .LICENSE.md
-├─  README.md
-└─  forge.config.js
+├─ .eslintrc.json
+├─ .gitignore
+├─ .prettierrc
+├─ .LICENSE.md
+├─ README.md
+└─ forge.config.js
 ```
 
 ## Quick Start
