@@ -1,37 +1,156 @@
-# Vite + React + Typescript + Electron - Starter
+# Employee Data Visualization
 
-https://github.com/AleBL/vite-reactts-electron-starter/assets/26389226/2697ab5c-b6c5-4c28-ab40-1a237e12cf8d
+A desktop application built with **Electron**, **React**, **TypeScript**, and **Tailwind CSS** for visualizing employee time tracking data. The app fetches randomized time tracking entries from an API and displays them using interactive **Pie Charts**. Averages for start/end time, work duration, and break duration are also displayed in cards above the charts.
 
-> It is a simple starter template without unnecessary packages.
+---
 
-This very simple Starter template, utilizes [Vite](https://github.com/vitejs/vite), [Tailwind](https://tailwindcss.com/), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/) and [Electron](https://electronjs.org/).
+## Demo / Screenshot
 
-By default, the React framework is used for the interface, but you can easily use any other framework such as Vue, Preact, Angular, Svelte or anything else.
+<div style="display: flex; gap: 50px">
+  <img src="./dist-vite/assets/in-motion.jpg" alt="Employee Data Visualization App" height="400" />
+  <img src="./dist-vite/assets/in-motion-responsive.jpg" alt="Employee Data Visualization App - Responsive" height="400" />
+</div>
 
-> Vite is framework agnostic
+---
 
-## Installation
+## Technologies Used
 
-Clone this repo and install all dependencies  
-`yarn` or `npm install`
+- **Electron** – Cross-platform desktop app framework
+- **React** – UI library
+- **TypeScript** – Type-safe JavaScript
+- **Tailwind CSS** – Utility-first styling
+- **Chart.js / react-chartjs-2** – Pie charts visualization
+- **Jest / React Testing Library** – Unit testing
 
-## Development
+---
 
-`yarn dev` or `npm run dev`
+## Features
 
-## Build
+- Interactive Pie Charts showing **Project Allocation** and **Workplace Allocation**
+- Average cards for start time, end time, work duration, and break duration
+- Responsive layout for small and large screens
+- Dark theme with color-coded charts
+- Desktop notifications when new data is loaded
+- Fully typed TypeScript codebase
 
-`yarn build` or `npm run build`
+---
 
-## Publish
+## Folder Structure
 
-`yarn dist` or `npm run dist`
+```bash
+.
+├─ /dist-electron       
+│   ├─ index.js
+│   └─ preload.ts
+├─ /dist-vite           
+│   ├─ /assets
+│   └─ index.html
+├─ /electron            
+│   ├─ index.ts
+│   ├─ preload.ts
+│   └─ tsconfig.json
+├─ /src                 
+│   ├─ /api
+│   │   ├─ api.ts
+│   │   ├─ base.ts
+│   │   ├─ common.ts
+│   │   ├─ configuration.ts
+│   │   └─ index.ts
+│   ├─ /components
+│   │   ├─ Card.tsx
+│   │   ├─ Chart.tsx
+│   │   └─ Dashboard.tsx
+│   ├─ /hooks
+│   │   └─ useTimeChanges.ts
+│   └─ /utils
+│       └─ timeChangesUtils.ts
+├─ /tests               
+│   ├─ /components
+│   │   ├─ Card.test.tsx
+│   │   ├─ Chart.test.tsx
+│   │   └─ Dashboard.test.tsx
+│   ├─ /hooks
+│   │   └─ useTimeChanges.test.ts
+│   └─ /utils
+│       └─ timeChangesUtils.test.ts
+├─ App.tsx
+├─ main.tsx
+├─ index.css
+├─ index.html
+├─ package.json
+├─ tsconfig.json
+├─ vite.config.ts
+├─ forge.config.js
+├─ README.md
+├─ .eslintrc.json
+├─ .prettierrc
+├─ .gitignore
+├─ LICENSE.md
+└─ package-lock.json
+└─ package.json
+└─ postcss.config.js
+└─ README.md
+└─ tailwind.config.js 
+└─ tsconfig.json
+└─ vite.config.ts
+└─ yarn.lock
+```
 
-## More advanced templates  
+## Environment Modes:
 
-If you are looking for more advanced templates than this, please go to one of the following links (these are some other links out of the **[awesome-vite](https://github.com/vitejs/awesome-vite)** repo) or you can help me make this template better 🙂  
+- Development: npm run dev
+- Production: npm run build && npm run start:prod
 
-Links: 
-- [vite-react-electron](https://github.com/caoxiemeihao/vite-react-electron)
-- [electron-vite-react](https://github.com/twstyled/electron-vite-react)
-- [vite-electron-esbuild-starter](https://github.com/jctaoo/vite-electron-esbuild-starter)
+---
+
+## Quick Start
+
+### Clone & Install
+
+```bash
+git clone <your-repo-link>
+cd employee-data-visualization
+npm install
+```
+
+### Run in Development
+
+```bash
+npm run dev
+```
+
+- Electron loads the React app from http://localhost:3000
+- Auto-refresh on file changes
+- DevTools are open (optional)
+
+### Run Tests
+```bash
+npm run test
+```
+
+- Uses Jest and React Testing Library
+
+### Build Production App
+
+```bash
+npm run build
+```
+
+### Run Production
+
+```bash
+npm run start:prod
+```
+
+- Electron loads compiled frontend from /dist-vite/index.html
+- DevTools are disabled
+
+### Create Windows Executable (.exe)
+
+```bash
+npm run make
+```
+
+- The .exe is located in /out/make/squirrel.windows/x64/
+- Portable, no installer required
+

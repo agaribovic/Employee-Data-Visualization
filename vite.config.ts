@@ -24,7 +24,6 @@ function plugins(isDev: boolean) {
     react(),
     electron([
       {
-        // Main-Process entry file of the Electron App.
         entry: join(root, 'electron/index.ts'),
         onstart(options) {
           options.startup();
@@ -36,8 +35,6 @@ function plugins(isDev: boolean) {
       {
         entry: join(root, 'electron/preload.ts'),
         onstart(options) {
-          // Notify the Renderer-Process to reload the page when the Preload-Scripts build is complete,
-          // instead of restarting the entire Electron App.
           options.reload();
         },
         vite: {
@@ -51,7 +48,6 @@ function plugins(isDev: boolean) {
 }
 
 export default ({ command }: ConfigEnv): UserConfig => {
-  // DEV
   if (command === 'serve') {
     return {
       root: srcRoot,
@@ -75,7 +71,6 @@ export default ({ command }: ConfigEnv): UserConfig => {
       }
     };
   }
-  // PROD
   return {
     root: srcRoot,
     base: './',

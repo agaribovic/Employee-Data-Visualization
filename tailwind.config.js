@@ -7,8 +7,7 @@ export default withMT({
   theme: {
     extend: {
       colors: {
-        'slate-800': 'rgb(30 41 59)',
-        'slate-900': 'rgb(15 23 42)'
+        amberCustom: '#FFB20A'
       }
     }
   },
