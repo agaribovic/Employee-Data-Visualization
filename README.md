@@ -1,12 +1,12 @@
-# Employee Data Visualization
+ Employee Data Visualization
 
-A desktop application built with **Electron**, **React**, **TypeScript**, and **Tailwind CSS** for visualizing employee time tracking data. The app fetches randomized time tracking entries from an API and displays them using interactive **Pie Charts**. Averages for start/end time, work duration, and break duration are also displayed in cards below the charts.
+A desktop application built with **Electron**, **React**, **TypeScript**, and **Tailwind CSS** for visualizing employee time tracking data. The app fetches randomized time tracking entries from an API and displays them using interactive **Pie Charts**. Averages for start/end time, work duration, and break duration are also displayed in cards above the charts.
 
 ---
 
 ## Demo / Screenshot
 
-![Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases)
+![Employee Data Visualization App](./assets/screenshots/in-motion.jpg)
 
 ---
 
@@ -16,7 +16,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 - **React** – UI library
 - **TypeScript** – Type-safe JavaScript
 - **Tailwind CSS** – Utility-first styling
-- **https://github.com/agaribovic/Employee-Data-Visualization/releases / react-chartjs-2** – Pie charts visualization
+- **Chart.js / react-chartjs-2** – Pie charts visualization
 - **Jest / React Testing Library** – Unit testing
 
 ---
@@ -38,47 +38,47 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 .
 ├─ /assets           
 │   ├─ /screenshots
-│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases 
-│   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases      
+│   │   ├─ in-motion.jpg 
+│   │   └─ in-motion-responsive.jpg      
 ├─ /electron            
-│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   ├─ index.ts
+│   ├─ preload.ts
+│   └─ tsconfig.json
 ├─ /src                 
 │   ├─ /api
-│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   ├─ api.ts
+│   │   ├─ base.ts
+│   │   ├─ common.ts
+│   │   ├─ configuration.ts
+│   │   └─ index.ts
 │   ├─ /components
-│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   ├─ Card.tsx
+│   │   ├─ Chart.tsx
+│   │   └─ Dashboard.tsx
 │   ├─ /hooks
-│   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   └─ useTimeChanges.ts
 │   ├─ /tests               
 │   │   ├─ /components
-│   │   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   │   │   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   │   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   │   ├─ Card.test.tsx
+│   │   │   ├─ Chart.test.tsx
+│   │   │   └─ Dashboard.test.tsx
 │   │   ├─ /hooks
-│   │   │   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │   │   └─ useTimeChanges.test.ts
 │   │   └─ /utils
-│   │       └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │       └─ timeChangesUtils.test.ts
 │   └─ /utils
-│   │    └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   │    └─ timeChangesUtils.ts
 │   │
-│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   ├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-│   └─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+│   ├─ App.tsx
+│   ├─ index.css
+│   ├─ index.html
+│   └─ main.tsx
+├─ .eslintrc.json
 ├─ .gitignore
 ├─ .prettierrc
-├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-├─ https://github.com/agaribovic/Employee-Data-Visualization/releases
-└─ https://github.com/agaribovic/Employee-Data-Visualization/releases
+├─ .LICENSE.md
+├─ README.md
+└─ forge.config.js
 ```
 
 ## Quick Start
@@ -86,7 +86,7 @@ A desktop application built with **Electron**, **React**, **TypeScript**, and **
 ### Clone & Install
 
 ```bash
-git clone https://github.com/agaribovic/Employee-Data-Visualization/releases
+git clone https://github.com/agaribovic/Employee-Data-Visualization.git
 cd employee-data-visualization
 npm install
 ```
@@ -96,13 +96,13 @@ npm install
 
 After setting up OpenAPI, ensure the following configuration is applied:
 
-1. **Set the API base URL** in `https://github.com/agaribovic/Employee-Data-Visualization/releases`:
+1. **Set the API base URL** in `common.ts`:
 
 ```ts
-export const DUMMY_BASE_URL = `https://github.com/agaribovic/Employee-Data-Visualization/releases`;
+export const DUMMY_BASE_URL = `https://api.dummy.in-lotion.de`;
 ```
 
-2. **Verify the API endpoint path in** in `https://github.com/agaribovic/Employee-Data-Visualization/releases`:
+2. **Verify the API endpoint path in** in `api.ts`:
 
 ```ts
 const localVarPath = `/api/time-changes`;
@@ -146,7 +146,7 @@ npm run build
 npm run start:prod
 ```
 
-- Electron loads compiled frontend from https://github.com/agaribovic/Employee-Data-Visualization/releases
+- Electron loads compiled frontend from /dist-vite/index.html
 - DevTools are disabled
 
 ### Create Windows Executable (.exe)
@@ -155,7 +155,7 @@ npm run start:prod
 npm run make
 ```
 
-- The .exe is located in https://github.com/agaribovic/Employee-Data-Visualization/releases
+- The .exe is located in /out/make/squirrel.windows/x64/
 - Portable, no installer required
 
 
@@ -164,8 +164,4 @@ npm run make
 A portable Windows executable of the **Employee Data Visualization App** is available.  
 No installer is required — simply download and launch the app directly.
 
-[Download Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases)
-
-
-
-
+[Download Employee Data Visualization App](https://github.com/agaribovic/Employee-Data-Visualization/releases/latest/download/Employee.Data.Visualization.App.0.6.0.exe)
